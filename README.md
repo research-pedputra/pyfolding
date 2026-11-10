@@ -51,11 +51,7 @@ where $\mathbf k_p$ is a primitive-cell k-point and $\mathbf K_{\mathrm{raw}}$ i
 The reciprocal lattice translation is determined by:
 
 $$
-\mathbf T =
-\operatorname{round}
-\left(
-\mathbf K_{\mathrm{raw}}-\mathbf k_{\mathrm{QE}}
-\right)
+\mathbf{T} = \mathrm{round}\left(\mathbf{K}_{\mathrm{raw}} - \mathbf{k}_{\mathrm{QE}}\right)
 $$
 
 The inverse-transpose matrix is:
