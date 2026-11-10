@@ -198,18 +198,18 @@ The Lorentzian calculation is performed in Hartree, so the spectral function is 
 The input path file contains three fractional primitive reciprocal coordinates per row:
 
 $$
-\mathbf k_i=(k_{i,1},k_{i,2},k_{i,3})
+\mathbf{k}_i = (k_{i,1}, k_{i,2}, k_{i,3})
 $$
 
-The fractional k-points are converted into Cartesian reciprocal coordinates. The distance between consecutive points is:
+The distance between consecutive points is:
 
 $$
 \Delta s_i =
-\left\|
-\mathbf k_{i+1}^{\mathrm{cart}}
--
-\mathbf k_i^{\mathrm{cart}}
-\right\|
+\sqrt{
+(k_{i+1,x}^{\mathrm{cart}}-k_{i,x}^{\mathrm{cart}})^2+
+(k_{i+1,y}^{\mathrm{cart}}-k_{i,y}^{\mathrm{cart}})^2+
+(k_{i+1,z}^{\mathrm{cart}}-k_{i,z}^{\mathrm{cart}})^2
+}
 $$
 
 The cumulative path coordinate is:
